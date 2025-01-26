@@ -16,7 +16,7 @@ form.addEventListener('submit', async (e) => {
 });
 
 let getData = async (inp) => {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${inp}&appid=a8cd1c623d1b64e07a2899f69190d11e`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${inp}&appid=2c12d9e918589b0102acc5d3c04dd31f`;
     let response = await fetch(url);
     let data = await response.json();
 
@@ -24,7 +24,7 @@ let getData = async (inp) => {
 };
 
 let getForecast = async (inp1) => {
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${inp1}&appid=a8cd1c623d1b64e07a2899f69190d11e`;
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${inp1}&appid=2c12d9e918589b0102acc5d3c04dd31f`;
     let response = await fetch(url);
     let data = await response.json();
 
